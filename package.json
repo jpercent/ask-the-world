@@ -1,0 +1,15 @@
+{
+  "name": "ask-the-world",
+  "version": "1.0.0",
+  "description": "Ask the world backend",
+  "main": "main.js",
+  "repository": "git@github.com:jpercent/ask-the-world.git",
+  "author": "James Percent <james@shift5.net>",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.3"
+  }
+}
