@@ -1,20 +1,4 @@
 var mongoose = require('mongoose');
-var UserSchema = new mongoose.Schema({
-  name: {
-    type:String,
-    required:true
-  },
-  email: {
-    type:String,
-    required:true,
-    index:true,
-    unique:true
-  },
-  password: {
-    type:String,
-    required:true
-  }
-});
 
 var QuestionSchema = new mongoose.Schema({
   question: {
@@ -38,8 +22,5 @@ var QuestionSchema = new mongoose.Schema({
   }
 });
 
-
-mongoose.model('User', UserSchema);
 mongoose.model('Question', QuestionSchema);
-module.exports.User = mongoose.model('User');
-module.exports.Question = mongoose.model('Question');
+module.exports = mongoose.model('Question');
